@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.rizze.nl.x-services.plugins.toast"
-        version="2.0.5">
+        version="2.0.6">
 
   <name>Toast</name>
 
@@ -80,5 +80,14 @@
             <feature name="Toast" value="Toast" />
         </config-file>
     </platform>
-  
+         <!-- windows -->
+    <platform name="windows">
+
+
+        <js-module src="src/windows/Toast.js" name="ToastProxy">
+            <merges target="" />
+        </js-module>
+    </platform>
+
+
 </plugin>
